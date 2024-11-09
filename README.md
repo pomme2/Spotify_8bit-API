@@ -14,10 +14,9 @@ Spotify 8-Bit is an interactive guessing game that challenges players to identif
 
 ## Screenshots 📸
 
-- **Easy Mode**: ![game_easy](https://github.com/user-attachments/assets/1965931d-6e43-48a7-ad72-6d0f6ca2dd6b)
+![game_easy](https://github.com/user-attachments/assets/1965931d-6e43-48a7-ad72-6d0f6ca2dd6b)
 
-- 
-- **Expert Mode**: ![hard_mode](https://github.com/user-attachments/assets/f4c06423-7048-46cf-b4d0-bb06659ff15d)
+![hard_mode](https://github.com/user-attachments/assets/f4c06423-7048-46cf-b4d0-bb06659ff15d)
 
 
 ### Example Screenshots:
