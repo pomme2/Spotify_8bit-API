@@ -52,7 +52,7 @@ def save_album_cover_art(url, grayscale=False):
     response = requests.get(url)
     if response.status_code == 200:
         img = Image.open(BytesIO(response.content))
-        pixel_size = 10
+        pixel_size = 55
         img = img.resize((img.size[0] // pixel_size, img.size[1] // pixel_size), Image.NEAREST)
         img = img.resize((img.size[0] * pixel_size, img.size[1] * pixel_size), Image.NEAREST)
         if grayscale:
@@ -139,11 +139,16 @@ def start_new_round():
     # Clear previous widgets
     for widget in frame_game.winfo_children():
         widget.destroy()
+  
 
-    # Display the album cover
+      # Display the album cover
     img = save_album_cover_art(album_cover_url, grayscale=grayscale)
+    
+    # Resize the image to a smaller size, e.g., 100x100 pixels
     if img:
+        img = img.resize((340, 340), Image.LANCZOS)  # Adjust the width and height as needed
         img_tk = ImageTk.PhotoImage(img)
+        
         label_img = tk.Label(frame_game, image=img_tk, bg="#f0f4f7")
         label_img.image = img_tk
         label_img.pack(pady=10)
